@@ -1,0 +1,3 @@
+import Link from "next/link";
+const L = [["/studio", "Style Studio", "Explora estilos e vê o que te falta"], ["/wishlist", "Wishlist", "Peças que desejas, avaliadas contra o teu closet"], ["/insights", "Insights", "Estatísticas e custo por utilização"], ["/calendar", "Calendar", "Planeia e regista o que vestes"], ["/tryon", "Virtual Try-On", "Provador virtual (requer serviço externo)"]];
+export default function Mais() { return <div className="space-y-3"><h1 className="text-3xl">Mais</h1>{L.map(([h, t, d]) => <Link key={h} href={h} className="card block"><b className="font-serif text-xl">{t}</b><p className="text-sm text-mut">{d}</p></Link>)}</div>; }
